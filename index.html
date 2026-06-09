@@ -32,7 +32,7 @@ a{text-decoration:none;color:inherit}.wrap{max-width:1180px;margin:auto;padding:
 <a class="floating btn green" href="#checkout">Comprar R$ 19,90</a>
 <footer class="footer"><div class="wrap">© 2026 20 Orações Bíblicas Poderosas. Produto digital independente. Este site é um modelo editável em HTML.</div></footer>
 <script>
-const CHECKOUT_LINK = "https://checkoutseguro.ru/checkout/cmq6x5z6d08q401pzqw88wcg4?offer=FDW9ZAL"; // TROQUE AQUI PELO SEU LINK DE PAGAMENTO
+const CHECKOUT_LINK = "https://checkoutseguro.ru/checkout/cmq6x5z6d08q401pzqw88wcg4?offer=FDW9ZAL"; 
 const btn = document.getElementById('checkoutBtn'); btn.href = CHECKOUT_LINK;
 function timer(){const now=new Date(); const end=new Date(); end.setHours(23,59,59,999); const diff=end-now; const h=Math.floor(diff/36e5); const m=Math.floor(diff%36e5/6e4); const s=Math.floor(diff%6e4/1000); document.getElementById('h').textContent=String(h).padStart(2,'0'); document.getElementById('m').textContent=String(m).padStart(2,'0'); document.getElementById('s').textContent=String(s).padStart(2,'0')} timer(); setInterval(timer,1000);
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href'); if(id.length>1){e.preventDefault(); document.querySelector(id).scrollIntoView({behavior:'smooth'});}}));
